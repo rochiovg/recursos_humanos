@@ -1,0 +1,165 @@
+/* 
+    Document    :   main.css
+    Author      :   adrian mato
+    Description :   Estilo general
+*/
+
+@CHARSET "UTF-8";
+
+/*
+    Section    :    CSS RESET
+    Description:    Reseteamos practicamente todos los valores de los selectores para facilitar el cross-browsing
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em,
+font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, form, label,  caption, tbody,
+tfoot, thead,   button{
+    border:0pt none;
+    font-family: inherit;
+    font-size: 100%;  
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0pt;
+    padding: 0pt;
+    vertical-align: baseline;
+}
+body{
+	line-height: auto;
+	font-size: 12px !Important;
+	background: #fff;
+	font-family: Helvetica, Arial, sans-serif;
+	margin: 0pt;
+	/* [disabled]cursor: default; */
+	color: #000;
+}
+table{
+    border-collapse: separate;
+    border-spacing: 0pt;
+}
+strong{
+    font-weight: 700;
+}
+caption, th, td{
+    font-weight: normal;
+    /*text-align: left;*/
+}
+blockquote:before, blockquote:after, q:before, q:after{
+    main: "";
+}
+blockquote, q{
+    quotes: "" "";
+}
+html,body{
+    height: 100%;
+    
+    overflow: hidden;
+}
+.clearfix{
+    overflow: hidden;
+}
+
+
+
+/*
+    Section    :    TOP
+    Description:    Cabecera de nuestro lector RSS
+*/
+#top{
+    height: 120px;
+   
+    padding: 0;
+    border-bottom: 1px solid #c9d7f1;
+}
+#top h1{
+    width: 138px;
+    height: 30px;
+    background: transparent url("images/logo_bg.gif") no-repeat 0 0;
+    display: block;
+    text-indent: -9999px;
+}
+#top h1 a{
+    display: block;
+}
+
+/*
+    Section:        LATERAL
+    Description:    Panel lateral donde mostramos las distintas fuentes RSS
+*/
+#lateral{
+    width: 330px;
+    height: 100%;
+    float: left;
+	overflow:auto;
+}
+
+
+/*
+    Section:        CONTENT
+    Description:    Zona donde cargamos el contenido seleccionado
+*/
+#content{
+    height:95%;
+    margin-left: 260px;
+}
+#content h2{
+	
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px 0 20px;
+	background:#DAE8F3;
+color:#002084;
+    font-size: 12px;
+    font-weight: 700;
+}
+#content #render{
+    height: 100%;
+    overflow: hidden;
+}
+#content #tip{
+    display: block;
+    padding: 20px;
+}
+#content #iframe{
+    display: none;
+}
+
+
+/*
+    Section:        TOGGLER
+    Description:    Boton que permitirá mostrar / ocultar el panel
+*/
+#toggler{
+    width: 16px;
+    height: 100%;
+    border-left: 1px solid #c2cff1;
+    background: #EBEFF9 url("../images/toggler_bg.gif") no-repeat left center;
+    float: left;
+}
+#toggler:hover{
+    background: #c2cff1 url("../images/toggler_bg.gif") no-repeat -25px center;
+    cursor: pointer;
+}
+#toggler.off{
+    background: #EBEFF9 url("../images/toggler_off_bg.gif") no-repeat left center;
+    margin-left: 0;
+}
+#toggler.off:hover{
+    background: #c2cff1 url("../images/toggler_off_bg.gif") no-repeat -25px center;
+    margin-left: 0;
+}
+
+
+
+
+#footer{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: right;
+    border-top: 1px solid #8c9dc8;
+    background: #DAE8F3;
+    position: fixed;
+    bottom: 0;
+}
+#footer span{
+    padding-right: 10px;
+}

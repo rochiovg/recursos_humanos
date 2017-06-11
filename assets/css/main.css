@@ -1,0 +1,162 @@
+html,
+body {
+  color: #212121;
+  background-color: #fafafa;
+  font-size: 16px;
+}
+
+body {
+  margin-top: 50px;
+}
+
+img {
+  vertical-align: middle;
+  display: inline;
+}
+
+header.main .title {
+	/* es el alto desde donde empieza el titulo de la clase header*/
+  padding: 30px 0;
+  background-color: #4fc3f7;
+}
+
+header.main .tip {
+  background-color: #03a9f4;
+  /* este el alto del footer de la clase header*/
+  padding: 16px 0
+}
+
+pre.code {
+  background-color: #212121;
+  color: #fafafa;
+  padding: 8px;
+  overflow-x: auto;
+}
+
+section {
+  margin-bottom: 10px;
+}
+
+.footer.main {
+  background-color: #333333;
+  color: #fafafa;
+  padding: 10px 0;
+ /*-webkit-box-sizig: border-box
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;*/
+}
+
+.footer.main a {
+  color: #4fc3f7;
+}
+
+
+
+.navbar.main {
+  position:static;
+  top: 130;
+  right: 0;
+  left: 0;
+  padding: 0 4px;
+
+  height: 56px;
+  line-height: 56px;
+
+  background-color: #29b6f6;
+
+  -webkit-box-sizig: border-box
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  z-index: 5;
+
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.5);
+  box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.5);
+}
+.navbar.main::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.navbar.main * {
+  display: inline-block;
+}
+
+.navbar.main a {
+  text-decoration: none
+}
+
+.navbar.main .icon {
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+.sidebar {
+  /*position: fixed;*/
+  position:static;
+  top: 30px;
+  bottom: 0;
+  width: 100px;
+  
+  /*color de fondo del Sidebar*/
+  background-color:#000000;
+}
+
+#sidebar-main {
+  top: 30px;
+}
+
+.sidebar.right {
+  right: -100px;
+  text-align: right;
+}
+
+.sidebar.left {
+  left: -100px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  display: block;
+}
+
+.sidebar .wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding: 1em;
+  padding-top: 1.5em;
+  overflow-y: auto;
+/*
+  -webkit-box-sizig: border-box
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;*/
+}
+
+.sidebar nav {
+  margin-bottom: 24px;
+}
+
+.sidebar nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px;
+}
+
+.sidebar nav ul li {
+  padding: 4px 0;
+  margin: 4px 0;
+}
+
+.sidebar nav ul li.title {
+  font-weight: bold;
+}
+
+.float-right {
+  float: right;
+}
+.float-left {
+  float: left;
+}
